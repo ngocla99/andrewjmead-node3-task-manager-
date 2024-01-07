@@ -14,3 +14,5 @@ app.use(taskRouter);
 app.listen(port, () => {
   console.log("listening on port http://localhost:" + port);
 });
+
+module.exports = app;
