@@ -11,6 +11,10 @@ app.use(express.json());
 app.use(userRouter);
 app.use(taskRouter);
 
+app.use("/", (req, res) => {
+  res.send("Welcome to the task app!");
+});
+
 app.listen(port, () => {
   console.log("listening on port http://localhost:" + port);
 });
